@@ -1,0 +1,678 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style type="text/css">
+			/* .container div{border: 1px solid red;} */
+			body {
+				background: #F8F8F8;
+			}
+
+			/* header开始 */
+			.container>div{
+				z-index: 99;
+			}
+			header>div {
+				height: 90px;
+			}
+
+			header div ul li a {
+				color: #000000;
+			}
+			#navbarSupportedContent ul .gift a::after{
+				content: "全国配";
+				background: url(img/deliveryFlagBg.png);
+			}
+			.city {
+				font-size: 12px;
+			}
+			.container .navbar-nav .nav-link{
+				color: #000000;
+			}
+			.container .navbar-nav .nav-link:hover{
+				color: red;
+			}
+			@media (min-width:576px) {
+				header div ul li {
+					padding: 0 2px;
+				}
+
+				header div ul li a {
+					font-size: 10px;
+				}
+
+				header>div>div:first-child {
+					background: url(img/logo.png) center no-repeat;
+					background-size: 90%;
+				}
+			}
+
+			@media (min-width:992px) {
+				header div ul li {
+					padding: 0 10px;
+				}
+
+				header div  ul li a {
+					font-size: 13px;
+				}
+
+				header>div>div:first-child {
+					background: url(img/logo.png) center no-repeat;
+					background-size: 100%;
+				}
+			}
+
+			/* header结束 */
+			/* 轮播图开始 */
+			.slide {
+				width: 100%;
+			}
+
+			.carousel-indicators li {
+				width: 12px;
+				height: 12px;
+				background: #e8e8e8;
+				border-radius: 50%;
+				margin: 0 0.25rem;
+			}
+
+			.carousel-indicators .active {
+				background-color: #0aa1ed;
+			}
+
+			/* 轮播图结束 */
+			
+			/* VIP部分开始 */
+			.vip_a_color{
+				text-decoration: underline;
+				    color: #cea461;
+			}
+			/* VIP部分结束 */
+			
+			/* 轮播图2部分开始 */
+			.banner2_bottom_height{height: 410px;}
+			.main_title{
+				font-size: 28px;
+				min-height: 54px;
+			}
+			.sub_title{
+				font-size: 16px;
+				min-height: 24px;
+			}
+			.container>div>div:first-child div .btn_link{
+				display: block;
+				margin-top: 40px;
+				width: 160px;
+				height: 40px;
+				text-align: center;
+				line-height: 40px;
+				text-decoration: none;
+				color: #000000;
+			}
+			 .banner2_bottom{
+				position: relative;
+			}
+			 .banner2_bottom_1{
+				animation: bottom_p_1 5s ease-in-out infinite;
+				z-index: 20;
+			}
+			.banner2_bottom_2{
+				position: absolute;
+				top: 0px;
+				left: 0;
+				z-index: 10;
+			}
+			.banner2_bottom_3{
+				position: absolute;
+				top: 0;
+				left: 0;
+				z-index: 1;
+			}
+			@keyframes bottom_p_1{
+				0% {
+				  opacity: 0; }
+				5% {
+				  opacity: 1; }
+				32% {
+				  opacity: 1; }
+				33% {
+				  opacity: 0; }
+				100% {
+				  opacity: 0; } 
+			}
+			.banner2_bottom_2{
+				animation: bottom_p_2 5s ease-in-out infinite;
+			}
+			@keyframes bottom_p_2{
+				0% {
+				  opacity: 0; }
+				33% {
+				  opacity: 0; }
+				38% {
+				  opacity: 1; }
+				65% {
+				  opacity: 1; }
+				66% {
+				  opacity: 0; }
+				100% {
+				  opacity: 0; }  
+			}
+			.banner2_bottom_3{
+				animation: bottom_p_3 5s ease-in-out infinite;
+			}
+			@keyframes bottom_p_3{
+				0% {
+				  opacity: 0; }
+				66% {
+				  opacity: 0; }
+				71% {
+				  opacity: 1; }
+				99% {
+				  opacity: 1; }
+				100% {
+				  opacity: 0; } 
+			}
+			.banner2_top{
+				position: relative;
+				z-index: 50;
+			}
+			.banner2_top_1 img,.banner2_top_2 img ,.banner2_top_3 img{
+				width: 790px;
+				height: 394px;
+			}
+			.banner2_top_1 img{
+				position: absolute;
+				top: 50px;
+				left: -825px;
+				animation: top_p_1 5s ease-in-out infinite;
+			}
+			@keyframes top_p_1{
+				0% {
+				  opacity: 0; }
+				5% {
+				  opacity: 1; }
+				32% {
+				  opacity: 1; }
+				33% {
+				  opacity: 0; }
+				100% {
+				  opacity: 0; } 
+			}
+			.banner2_top_2 img{
+				position: absolute;
+				top: 50px;
+				left: -825px;
+				animation: top_p_2 5s ease-in-out infinite;
+			}
+			@keyframes top_p_2{
+				0% {
+				  opacity: 0; }
+				33% {
+				  opacity: 0; }
+				38% {
+				  opacity: 1; }
+				65% {
+				  opacity: 1; }
+				66% {
+				  opacity: 0; }
+				100% {
+				  opacity: 0; }  
+			}
+			.banner2_top_3 img{
+				position: absolute;
+				top: 50px;
+				left: -825px;
+				animation: top_p_3 5s ease-in-out infinite;
+			}
+			@keyframes top_p_3{
+				0% {
+				  opacity: 0; }
+				66% {
+				  opacity: 0; }
+				71% {
+				  opacity: 1; }
+				99% {
+				  opacity: 1; }
+				100% {
+				  opacity: 0; } 
+			}
+			
+			
+			/* 轮播图2部分结束*/
+			
+			/* 详情部分开始 */
+			.p_tag{
+				    display: inline-block;
+				    height: 20px;
+				    line-height: 20px;
+				    padding: 0 6px;
+				    color: #ffffff;
+				    background: #cea461;
+				    position: relative;
+				    font-size: 12px;
+			}
+			.item_name{
+				font-size: 16px;
+				line-height: 28px;
+			}
+			.item_details{
+				font-size: 14px;
+				color: #949494;
+			}
+			.new_price{
+				color: #cea461;
+			}
+			.new_price p{
+				display: inline-block;
+				margin-right: 4px;
+				vertical-align: middle;
+			}
+			/* 详情部分结束 */
+			
+			
+			
+			/* 热门评论部分开始 */
+			.container .comment{
+				    font-size: 18px;
+				    font-weight: bold;
+				    text-align: center;
+			}
+			.container .comment>span::before{
+				content: "- ";
+			}
+			.container .comment>span::after{
+				content: " -";
+			}
+			/* 热门导航部分开始 */
+			#banner3 img{
+				width: 360px;
+				height: 240px;
+			}
+			.carousel-control-next,.carousel-control-prev{
+				width: 30px;height: 120px;
+				background-color: #aaa;
+				border-radius: 0.25rem;
+				top: 25%;
+			}
+			.carousel-control-prev{
+				left: -30px;
+			}
+			.carousel-control-next{
+				left: 100%;
+			}
+			/* 热门导航部分结束 */
+			
+			
+			/* 热门评论部分结束 */
+			
+			
+			
+			
+			/* footer部分开始 */
+			.footer_nav>p>a:not(:first-child){margin-left: 40px;}
+			.footer_tel,.footer_copy,.wx_btn{font-size: 14px;}
+			.wx_btn{color: #3e3e3e;}
+			.footer_copy,.footer_copy p a{color:#949494}
+			/* footer部分结束 */
+		</style>
+	</head>
+	<body>
+		<!-- header部分开始 -->
+		<div class="container-fluid bg-white">
+			<header class="container">
+				<div class="navbar navbar-light navbar-expand-lg  ">
+				  <a class="navbar-brand" href="#"><img src="./img/logo.png" ></a>
+				  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				    <span class="navbar-toggler-icon"></span>
+				  </button>
+				  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				    <ul class="navbar-nav mr-auto">
+				      <li class="nav-item active">
+				        <a class="nav-link" href="#">首页</a>
+				      </li>
+					  <li class="nav-item">
+					    <a class="nav-link" href="#">蛋糕</a>
+					  </li>
+					  <li class="nav-item gift"> 
+						   <a class="nav-link" href="">甜点心礼</a>
+					  </li>
+				      <li class="nav-item dropdown">
+				        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				          合作专区
+				        </a>
+				        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				          <a class="dropdown-item" href="#">银行活动</a>
+				          <a class="dropdown-item" href="#">企业采购</a>
+				          <a class="dropdown-item" href="#">大客户区</a>
+				        </div>
+				      </li>
+				  		<li class="nav-item">
+				  		  <a class="nav-link" href="#">立即兑换</a>
+				  		</li>
+				  		<li class="nav-item dropdown">
+				  		  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  		    我的诺心
+				  		  </a>
+				  		  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  		    <a class="dropdown-item" href="#">我的aha</a>
+				  		    <a class="dropdown-item" href="#">我的订单</a>
+				  		    <a class="dropdown-item" href="#">找回密码</a>
+				  			<a class="dropdown-item" href="#">礼券专区</a>
+				  			<a class="dropdown-item" href="#">卡券绑定</a>
+				  		  </div>
+				  		</li>
+				  		<li class="nav-item">
+				  		  <a class="nav-link iconfont" href="">
+				  		  	&#xe62b;成都
+				  		  </a>
+				  		</li>
+				  		<li class="nav-item">
+				  		  <a class="nav-link iconfont" href="">
+				  		  	<span class="text-muted city">查询地址</span>&#xe6d1;
+				  		  </a>
+				  		</li>
+						<li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle iconfont icon-denglu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+						  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						    <a class="dropdown-item" href="#">登录</a>
+						    <a class="dropdown-item" href="#">注册</a>
+						  </div>
+						</li>
+				  		<li class="nav-item">
+				  		  <a class="nav-link iconfont icon-shoutibao" href=""></a>
+				  		</li>
+					 </ul>
+					</div>
+				</div>
+			</header>
+		</div>
+		<!-- header部分结束 -->
+
+		<!-- 轮播图部分开始 -->
+		<div id="banner" class="slide carousel" data-ride="carousel">
+			<!-- 图片部分 -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="w-100" src="img/banner1.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="w-100" src="img/banner2.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="w-100" src="img/banner3.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="w-100" src="img/banner4.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="w-100" src="img/banner5.jpg">
+				</div>
+				<div class="carousel-item">
+					<img class="w-100" src="img/banner6.jpg">
+				</div>
+			</div>
+			<!-- 指示器部分 -->
+			<ul class="carousel-indicators">
+				<li data-target="#banner" data-slide-to="0" class="active"></li>
+				<li data-target="#banner" data-slide-to="1"></li>
+				<li data-target="#banner" data-slide-to="2"></li>
+				<li data-target="#banner" data-slide-to="3"></li>
+				<li data-target="#banner" data-slide-to="4"></li>
+				<li data-target="#banner" data-slide-to="5"></li>
+			</ul>
+		</div> 
+		<!-- 轮播图部分结束 -->
+
+
+		<!-- VIP部分开始 -->
+		<div class="vip bg-white my-4 ">
+			<div class="container  ">
+				<div class="row no-gutters">
+					<div class="col-sm-12 d-flex flex-nowrap row no-gutters p-4">
+						<div class="offset-md-1 cil-md-5 col-sm-6">
+							<img class="mb-3" src="img/vipLogo.png" >
+							<p class="m-0">尊贵礼遇享不停,升级aha会员</p>
+							<p class="">预计可省￥358+,<a href="" class="vip_a_color">了解更多</a></p>
+							<a class="btn btn-outline-dark rounded-0" href="">立即开通￥99/年</a>
+						</div>
+						<div class="offset-md-2 col-md-4 col-sm-6 row no-gutters d-flex align-items-md-center ">
+							<img class="col-sm-12" src="./img/aha1.png" >
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- VIP部分结束 -->
+		
+		<!-- 轮播图2部分开始 -->
+		<div class="container mb-5  ">
+			<div class="banner2_parent row no-gutters">
+				<!-- 底层开始 -->
+				<div class="banner2_bottom col-sm-12 row no-gutters">
+					<div class="banner2_bottom_1 banner2_bottom_height col-sm-12 pt-5 pl-5" style="background-color: #ffffff;">
+						<p class="main_title main_title mb-0 ">至臻醇享  经典之作</p>
+						<p class="sub_title sub_title ">国际金奖加冕  口碑 TOP</p>
+						<a class="btn_link border " href="">立即查看</a>
+					</div>
+					<div class="banner2_bottom_2 banner2_bottom_height col-sm-12 pt-5 pl-5" style="background-color: #f8c182;">
+						<p class="main_title main_title mb-0 ">早餐可以更省心！</p>
+						<p class="sub_title sub_title ">元气组合 唤醒晨间活力</p>
+						<a class="btn_link border " href="">立即查看</a>
+					</div>
+					<div class="banner2_bottom_3 banner2_bottom_height col-sm-12 pt-5 pl-5" style="background-color: #ffbb3f;">
+						<p class="main_title main_title mb-0 ">先领券 后下单！</p>
+						<p class="sub_title sub_title ">有优惠 更美味</p>
+						<a class="btn_link border " href="">立即查看</a>
+					</div>
+				</div>
+				<!-- 底层结束 -->
+				<!-- 上层开始 -->
+				<div class="banner2_top">
+					<div class="banner2_top_1">
+						<img src="img/bannertwo1.jpg" >
+					</div>
+					<div class="banner2_top_2">
+						<img src="img/bannertwo2.jpg" >
+					</div>
+					<div class="banner2_top_3">
+						<img src="img/bannertwo3.jpg" >
+					</div>
+				</div>
+				<!-- 上层结束 -->
+			</div>
+		</div>
+		<!-- 轮播图2部分结束  -->
+		
+		<!-- 详情部分开始 -->
+		<div class="container">
+			<div class="row no-gutters bg-white ">
+				<!-- 第一行 -->
+				<div class="col-sm-12 row no-gutters d-sm-flex  px-4 py-2">
+					<div class=" col-sm-12 col-md-6 col-lg-3 d-sm-flex flex-sm-column align-items-sm-center" style="width: 294px;height: 395px;">
+						<img class="p-3 bg-white" src="img/details1.jpg" style="width: 274px;height: 274px;" >
+						<div class="p_tag mt-2">
+							<span class="tag">限时立减137元</span>
+						</div>
+						<h3 class="item_name m-0">花花世界</h3>
+						<div class="item_details">绽放柔情的花花世界</div>
+						<div class="new_price">
+							<p>￥336</p>
+						</div>
+					</div>
+					<div class=" col-sm-12 col-md-6 col-lg-3 d-sm-flex flex-sm-column align-items-sm-center" style="width: 294px;height: 395px;">
+						<img class="p-3 bg-white" src="img/details2.jpg" style="width: 274px;height: 274px;" >
+						<div class="p_tag mt-2 bg-white"></div>
+						<h3 class="item_name m-0">海盐乳酪芝士</h3>
+						<div class="item_details">芝士控绕不开的难忘滋味</div>
+						<div class="new_price">
+							<p>￥218</p>
+						</div>
+					</div>
+					<div class=" col-sm-12 col-md-6 col-lg-3 d-sm-flex flex-sm-column align-items-sm-center" style="width: 294px;height: 395px;">
+						<img class="p-3 bg-white" src="img/details3.jpg" style="width: 274px;height: 274px;" >
+						<div class="p_tag mt-2 bg-white"></div>
+						<h3 class="item_name m-0">巧克力松露·熠彩</h3>
+						<div class="item_details">巧克力爱好者的福音</div>
+						<div class="new_price">
+							<p>￥258</p>
+						</div>
+					</div>
+					<div class=" col-sm-12 col-md-6 col-lg-3 d-sm-flex flex-sm-column align-items-sm-center" style="width: 294px;height: 395px;">
+						<img class="p-3 bg-white" src="img/details4.jpg" style="width: 274px;height: 274px;" >
+						<div class="p_tag mt-2 bg-white"></div>
+						<h3 class="item_name m-0">经典原味千层</h3>
+						<div class="item_details">轻盈饼皮夹裹细腻奶油 层次丰富</div>
+						<div class="new_price">
+							<p>￥336</p>
+						</div>
+					</div>
+				</div>
+				<!-- 第二行 -->
+				<div class="col-sm-12 row no-gutters d-sm-flex  px-4 py-2">
+					<div class=" col-sm-12 col-md-6 col-lg-3 d-sm-flex flex-sm-column align-items-sm-center" style="width: 294px;height: 395px;">
+						<img class="p-3 bg-white" src="img/details5.jpg" style="width: 274px;height: 274px;" >
+						<div class="p_tag mt-2">
+							<span class="tag">限时立减137元</span>
+						</div>
+						<h3 class="item_name m-0">花花世界</h3>
+						<div class="item_details">绽放柔情的花花世界</div>
+						<div class="new_price">
+							<p>￥336</p>
+						</div>
+					</div>
+					<div class=" col-sm-12 col-md-6 col-lg-3 d-sm-flex flex-sm-column align-items-sm-center" style="width: 294px;height: 395px;">
+						<img class="p-3 bg-white" src="img/details6.jpg" style="width: 274px;height: 274px;" >
+						<div class="p_tag mt-2 bg-white"></div>
+						<h3 class="item_name m-0">海盐乳酪芝士</h3>
+						<div class="item_details">芝士控绕不开的难忘滋味</div>
+						<div class="new_price">
+							<p>￥218</p>
+						</div>
+					</div>
+					<div class=" col-sm-12 col-md-6 col-lg-3 d-sm-flex flex-sm-column align-items-sm-center" style="width: 294px;height: 395px;">
+						<img class="p-3 bg-white" src="img/details7.jpg" style="width: 274px;height: 274px;" >
+						<div class="p_tag mt-2 bg-white"></div>
+						<h3 class="item_name m-0">巧克力松露·熠彩</h3>
+						<div class="item_details">巧克力爱好者的福音</div>
+						<div class="new_price">
+							<p>￥258</p>
+						</div>
+					</div>
+					<div class=" col-sm-12 col-md-6 col-lg-3 d-sm-flex flex-sm-column align-items-sm-center" style="width: 294px;height: 395px;">
+						<img class="p-3 bg-white" src="img/details8.jpg" style="width: 274px;height: 274px;" >
+						<div class="p_tag mt-2 bg-white"></div>
+						<h3 class="item_name m-0">经典原味千层</h3>
+						<div class="item_details">轻盈饼皮夹裹细腻奶油 层次丰富</div>
+						<div class="new_price">
+							<p>￥336</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- 详情部分结束 -->
+		
+		<!-- 热门评论部分开始 -->
+		<div class="container mt-5 mb-4">
+			<div class="row no-gutters">
+				<h2 class="col-sm-12 comment"><span>热门评论</span></h2>
+				<!-- 轮播图部分开始 -->
+				<div id="banner3" class="col-sm-12 slide carousel bg-white" data-ride="carousel">
+					<!-- 图片部分 -->
+					<div class="carousel-inner col-sm-12 row no-gutters">
+						<div class= "col-sm-12 carousel-item active row no-gutters">
+							<div class="col-sm-12 row no-gutters d-flex justify-content-sm-between">
+								<div class="col-sm-4">
+									<img class="" src="./img/comment1.jpg">
+								</div>
+								<div class="col-sm-4">
+									<img class="ml-2" src="./img/comment2.jpg">
+								</div>
+								<div class="col-sm-4">
+									<img class="ml-3" src="./img/comment3.jpg">
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12 carousel-item row no-gutters">
+							<div class="col-sm-12 row no-gutters d-flex justify-content-sm-between">
+								<div class="col-sm-4">
+									<img class="" src="./img/comment4.jpg">
+								</div>
+								<div class="col-sm-4">
+									<img class="ml-2" src="./img/comment5.jpg">
+								</div>
+								<div class="col-sm-4">
+									<img class="ml-3" src="./img/comment6.jpg">
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- 指示器部分 -->
+					<!-- 左右箭头 -->
+					<a href="#banner3" data-slide="next"  class="carousel-control-next">
+						<span class="carousel-control-next-icon"></span>
+					</a>
+					<a href="#banner3" data-slide="prev"  class="carousel-control-prev">
+						<span class="carousel-control-prev-icon"></span>
+					</a>
+				</div> 
+				<!-- 轮播图部分结束 -->
+			</div>
+		</div>
+		<!-- 热门评论部分结束 -->
+		<!-- footer部分开始 -->
+		<div class="container-fluid bg-white">
+			<div class="container ">
+				<div class="row no-gutters">
+					<div class="col-sm-12 col-md-10 d-flex flex-sm-column justify-content-sm-center">
+						<div class=" footer_nav ">
+							<p class="d-flex row no-gutters">
+								<a class=" text-dark" href="">诺心公告</a>
+								<a class=" text-dark" href="">关于诺心</a>
+								<a class=" text-dark" href="">客服服务</a>
+								<a class=" text-dark" href="">食品经营许可证</a>
+								<a class=" text-dark" href="">生产许可证</a>
+								<a class=" text-dark" href="">预付费卡协议</a>
+								<a class=" text-dark" href="">联系我们</a>
+								<a class=" text-dark" href="">环保信息</a>
+							</p>
+						</div>
+						<div class=" footer_tel">
+							<p>
+								<span>如有问题，请联系在线客服。工作时间：9:00-21:00</span>
+							</p>
+						</div>
+						<div class=" footer_copy">
+							<p>
+							    copyright©2010-2020 诺心lecake.com版权所有&nbsp;&nbsp;
+							    <a href="http://www.beian.miit.gov.cn" target="_blank">沪ICP备10211730号</a>&nbsp;&nbsp;
+							    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402003364&#10;" target="_blank">沪公网安备31010402003364号</a>
+							</p>
+						</div>
+					</div>
+					<div class="wx_btn col-sm-12 col-md-2 d-flex  flex-lg-wrap justify-content-sm-center text-center">
+						<a href="javascript:void (0)" class="wx_img">
+						    <img class="w-75" src="./img/qrCode.png">
+						</a>
+						<p>关注微信公众号<br>&nbsp;&nbsp;可进入微商城</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer部分结束 -->
+		
+		
+		
+		
+		
+		
+		
+		
+	</body>
+</html>
