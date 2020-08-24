@@ -1,0 +1,493 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style type="text/css">
+			/* .container div{border: 1px solid red;} */
+			body {
+				background: #F8F8F8;
+			}
+
+			/* header开始 */
+			.container>div {
+				z-index: 99;
+			}
+
+			header>div {
+				height: 90px;
+			}
+
+			header div ul li a {
+				color: #000000;
+			}
+
+			#navbarSupportedContent ul .gift a::after {
+				content: "全国配";
+				background: url(img/deliveryFlagBg.png);
+			}
+
+			.city {
+				font-size: 12px;
+			}
+
+			.container .navbar-nav .nav-link {
+				color: #000000;
+			}
+
+			.container .navbar-nav .nav-link:hover {
+				color: red;
+			}
+
+			@media (min-width:576px) {
+				header div ul li {
+					padding: 0 2px;
+				}
+
+				header div ul li a {
+					font-size: 10px;
+				}
+
+				header>div>div:first-child {
+					background: url(img/logo.png) center no-repeat;
+					background-size: 90%;
+				}
+			}
+
+			@media (min-width:992px) {
+				header div ul li {
+					padding: 0 10px;
+				}
+
+				header div ul li a {
+					font-size: 13px;
+				}
+
+				header>div>div:first-child {
+					background: url(img/logo.png) center no-repeat;
+					background-size: 100%;
+				}
+			}
+
+			/* header结束 */
+			/* content部分开始 */
+			.content {
+				background-color: #f8f8f8;
+			}
+			.nav-link{
+				color: #3e3e3e;
+			}
+			.nav li:nth-child(2)>a{
+				color: red;
+			}
+			.name {
+				margin: 5px 0;
+				font-weight: normal;
+				font-size: inherit;
+			}
+
+			.tag span {
+				margin: 5px 0;
+				font-size: 11px;
+				padding: 2px 6px;
+				color: #ffffff;
+				background: #cca976;
+				line-height: 1.2;
+				display: inline-block;
+				position: relative;
+			}
+			.tag p{
+				margin: 5px 0;
+			}
+			.reason {
+				font-size: 12px;
+				max-height: 36px;
+				color: #949494;
+				overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			.price{
+				margin: 5px 0;
+			}
+			.buy_btn {
+			    color: #ff3500;
+			    font-size: 12px;
+			}
+			/* content部分结束 */
+
+			/* footer部分开始 */
+			.footer_nav>p>a:not(:first-child) {
+				margin-left: 40px;
+			}
+
+			.footer_tel,
+			.footer_copy,
+			.wx_btn {
+				font-size: 14px;
+			}
+
+			.wx_btn {
+				color: #3e3e3e;
+			}
+
+			.footer_copy,
+			.footer_copy p a {
+				color: #949494
+			}
+
+			/* footer部分结束 */
+		</style>
+	</head>
+	<body>
+		<!-- header部分开始 -->
+		<div class="container-fluid bg-white">
+			<header class="container">
+				<div class="navbar navbar-light navbar-expand-lg  ">
+					<a class="navbar-brand" href="#"><img src="./img/logo.png"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">首页</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">蛋糕</a>
+							</li>
+							<li class="nav-item gift">
+								<a class="nav-link" href="">甜点心礼</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									合作专区
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">银行活动</a>
+									<a class="dropdown-item" href="#">企业采购</a>
+									<a class="dropdown-item" href="#">大客户区</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">立即兑换</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									我的诺心
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">我的aha</a>
+									<a class="dropdown-item" href="#">我的订单</a>
+									<a class="dropdown-item" href="#">找回密码</a>
+									<a class="dropdown-item" href="#">礼券专区</a>
+									<a class="dropdown-item" href="#">卡券绑定</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link iconfont" href="">
+									&#xe62b;成都
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link iconfont" href="">
+									<span class="text-muted city">查询地址</span>&#xe6d1;
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle iconfont icon-denglu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false"></a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">登录</a>
+									<a class="dropdown-item" href="#">注册</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link iconfont icon-shoutibao" href=""></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<hr class="m-0">
+		</div>
+		<!-- header部分结束 -->
+
+		<!-- content部分开始 -->
+		<div class="container-fluid bg-white">
+			<div class="container content p-3 mb-3 ">
+				<div class="bg-white">
+					<ul class="nav">
+						<li class="nav-item"><a class="nav-link" href="">口味:</a></li>
+						<li class="nav-item"><a class="nav-link" href="">全部</a></li>
+						<li class="nav-item"><a class="nav-link" href="">雪域口味</a></li>
+						<li class="nav-item"><a class="nav-link" href="">巧克力口味</a></li>
+						<li class="nav-item"><a class="nav-link" href="">芝士口味</a></li>
+						<li class="nav-item"><a class="nav-link" href="">慕斯口味</a></li>
+						<li class="nav-item"><a class="nav-link" href="">奶油口味</a></li>
+					</ul>
+					<ul class="nav">
+						<li class="nav-item"><a class="nav-link" href="">规格:</a></li>
+						<li class="nav-item"><a class="nav-link" href="">全部</a></li>
+						<li class="nav-item"><a class="nav-link" href="">2-4人食</a></li>
+						<li class="nav-item"><a class="nav-link" href="">5-8人食</a></li>
+						<li class="nav-item"><a class="nav-link" href="">10-12人食</a></li>
+						<li class="nav-item"><a class="nav-link" href="">15-20人食</a></li>
+					</ul>
+				</div>
+				<div class="bg-white">
+					<div class="row no-gutters">
+						<div class="col-lg-3 col-md-6 col-sm-12 ">
+							<div class="border border-light p-3">
+								<img class="w-100" src="img/list_1.jpg">
+								<h3 class="name">雪域牛乳芝士</h3>
+								<div class="tag">
+									<p><span class="">周末庆生专享 赠吃呗早餐</span></p>
+								</div>
+								<div class="reason">懂得营造浪漫氛围的蛋糕</div>
+								<div class="">
+									<p class="price">
+										¥218
+									</p>
+								</div>
+								<a href="#" class="buy_btn">
+									<span>加入购物车></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 ">
+							<div class="border border-light p-3">
+								<img class="w-100" src="img/list_2.jpg">
+								<h3 class="name">壁咚！阿华田</h3>
+								<div class="tag">
+									<p><span class="">限时立减60元</span></p>
+								</div>
+								<div class="reason">浓郁麦芽可可 绵软与甜脆的碰撞</div>
+								<div class="">
+									<p class="price">
+										¥258
+									</p>
+								</div>
+								<a href="#" class="buy_btn">
+									<span>加入购物车></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 ">
+							<div class="border border-light p-3">
+								<img class="w-100" src="img/list_3.jpg">
+								<h3 class="name">花花世界</h3>
+								<div class="tag">
+									<p><span class="">限时立减137元</span></p>
+								</div>
+								<div class="reason">绽放柔情的花花世界</div>
+								<div class="">
+									<p class="price">
+										¥336
+									</p>
+								</div>
+								<a href="#" class="buy_btn">
+									<span>加入购物车></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 ">
+							<div class="border border-light p-3">
+								<img class="w-100" src="img/list_4.jpg">
+								<h3 class="name">海盐乳酪芝士</h3>
+								<div class="tag">
+									<p><span class="">限时立减69元</span></p>
+								</div>
+								<div class="reason">芝士控绕不开的难忘滋味</div>
+								<div class="">
+									<p class="price">
+										¥218
+									</p>
+								</div>
+								<a href="#" class="buy_btn">
+									<span>加入购物车></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="border border-light p-3">
+								<img class="w-100" src="img/list_5.jpg">
+								<h3 class="name">玫瑰雪域芝士</h3>
+								<div class="tag">
+									<p><span class="">限时立减60元</span></p>
+								</div>
+								<div class="reason">懂得营造浪漫氛围的蛋糕</div>
+								<div class="">
+									<p class="price">
+										¥218
+									</p>
+								</div>
+								<a href="#" class="buy_btn">
+									<span>加入购物车></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 ">
+							<div class="border border-light p-3">
+								<img class="w-100" src="img/list_6.jpg">
+								<h3 class="name">玫瑰雪域芝士</h3>
+								<div class="tag">
+									<p><span class="">限时立减129元</span></p>
+								</div>
+								<div class="reason">巧克力爱好者的福音</div>
+								<div class="">
+									<p class="price">
+										¥258
+									</p>
+								</div>
+								<a href="#" class="buy_btn">
+									<span>加入购物车></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 ">
+							<div class="border border-light p-3">
+								<img class="w-100" src="img/list_7.jpg">
+								<h3 class="name">茶草京都</h3>
+								<div class="tag">
+									<p><span class="">限时立减60元</span></p>
+								</div>
+								<div class="reason">抹茶控京都寻味 草色茶香自悠然</div>
+								<div class="">
+									<p class="price">
+										¥218
+									</p>
+								</div>
+								<a href="#" class="buy_btn">
+									<span>加入购物车></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 ">
+							<div class="border border-light p-3">
+								<img class="w-100" src="img/list_8.jpg">
+								<h3 class="name">提拉米苏·写意</h3>
+								<div class="tag">
+									<p><span class="">限时立减60元</span></p>
+								</div>
+								<div class="reason">80%的雪域老友也爱这一款</div>
+								<div class="">
+									<p class="price">
+										¥298
+									</p>
+								</div>
+								<a href="#" class="buy_btn">
+									<span>加入购物车></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 ">
+							<div class="border border-light p-3">
+								<img class="w-100" src="img/list_9.jpg">
+								<h3 class="name">闲蛋皇</h3>
+								<div class="tag">
+									<p><span class="">+58元升级</span></p>
+								</div>
+								<div class="reason">热度持续飙升 人气咸蛋黄蛋糕</div>
+								<div class="">
+									<p class="price">
+										¥258
+									</p>
+								</div>
+								<a href="#" class="buy_btn">
+									<span>加入购物车></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12 ">
+							<div class="border border-light p-3">
+								<img class="w-100" src="img/list_10.jpg">
+								<h3 class="name">锦鲤送福</h3>
+								<div class="tag">
+									<p><span class="">限时立减60元</span></p>
+								</div>
+								<div class="reason">经典雪域迎“锦鲤” 口口浓醇好运	</div>
+								<div class="">
+									<p class="price">
+										¥298
+									</p>
+								</div>
+								<a href="#" class="buy_btn">
+									<span>加入购物车></span>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-12">
+							<div class="border border-light p-3">
+								<img class="w-100" src="img/list_11.jpg">
+								<h3 class="name">经典原味千层</h3>
+								<div class="tag">
+									<p><span class="">限时立减60元</span></p>
+								</div>
+								<div class="reason">轻盈饼皮夹裹细腻奶油 层次丰富</div>
+								<div class="">
+									<p class="price">
+										¥198
+									</p>
+								</div>
+								<a href="#" class="buy_btn">
+									<span>加入购物车></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- content部分结束 -->
+
+		<!-- footer部分开始 -->
+		<div class="container-fluid bg-white">
+			<div class="container ">
+				<div class="row no-gutters">
+					<div class="col-sm-12 col-md-10 d-flex flex-sm-column justify-content-sm-center">
+						<div class=" footer_nav ">
+							<p class="d-flex row no-gutters">
+								<a class=" text-dark" href="">诺心公告</a>
+								<a class=" text-dark" href="">关于诺心</a>
+								<a class=" text-dark" href="">客服服务</a>
+								<a class=" text-dark" href="">食品经营许可证</a>
+								<a class=" text-dark" href="">生产许可证</a>
+								<a class=" text-dark" href="">预付费卡协议</a>
+								<a class=" text-dark" href="">联系我们</a>
+								<a class=" text-dark" href="">环保信息</a>
+							</p>
+						</div>
+						<div class=" footer_tel">
+							<p>
+								<span>如有问题，请联系在线客服。工作时间：9:00-21:00</span>
+							</p>
+						</div>
+						<div class=" footer_copy">
+							<p>
+								copyright©2010-2020 诺心lecake.com版权所有&nbsp;&nbsp;
+								<a href="http://www.beian.miit.gov.cn" target="_blank">沪ICP备10211730号</a>&nbsp;&nbsp;
+								<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402003364&#10;" target="_blank">沪公网安备31010402003364号</a>
+							</p>
+						</div>
+					</div>
+					<div class="wx_btn col-sm-12 col-md-2 d-flex  flex-lg-wrap justify-content-sm-center text-center">
+						<a href="javascript:void (0)" class="wx_img">
+							<img class="w-75" src="./img/qrCode.png">
+						</a>
+						<p>关注微信公众号<br>&nbsp;&nbsp;可进入微商城</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer部分结束 -->
+	</body>
+</html>

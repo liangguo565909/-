@@ -1,0 +1,337 @@
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Document</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="css/iconfont.css" />	
+		<script src="js/jquery.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style type="text/css">
+			/* .container div{border: 1px solid red;} */
+			body {
+				background: #F8F8F8;
+			}
+
+			/* header开始 */
+			.container>div {
+				z-index: 99;
+			}
+
+			header>div {
+				height: 90px;
+			}
+
+			header div ul li a {
+				color: #000000;
+			}
+
+			#navbarSupportedContent ul .gift a::after {
+				content: "全国配";
+				background: url(img/deliveryFlagBg.png);
+			}
+
+			.city {
+				font-size: 12px;
+			}
+
+			.container .navbar-nav .nav-link {
+				color: #000000;
+			}
+
+			.container .navbar-nav .nav-link:hover {
+				color: red;
+			}
+
+			@media (min-width:576px) {
+				header div ul li {
+					padding: 0 2px;
+				}
+
+				header div ul li a {
+					font-size: 10px;
+				}
+
+				header>div>div:first-child {
+					background: url(img/logo.png) center no-repeat;
+					background-size: 90%;
+				}
+			}
+
+			@media (min-width:992px) {
+				header div ul li {
+					padding: 0 10px;
+				}
+
+				header div ul li a {
+					font-size: 13px;
+				}
+
+				header>div>div:first-child {
+					background: url(img/logo.png) center no-repeat;
+					background-size: 100%;
+				}
+			}
+
+			/* header结束 */
+
+			/* content部分开始 */
+			.name {
+			        font-weight: normal;
+			        font-size: inherit;
+			}
+			.tag{
+			    font-size: 11px;
+			    padding: 2px 6px;
+			    color: #ffffff;
+			    background: #cca976;
+			    line-height: 1.2;
+			    display: inline-block;
+			    position: relative;
+			}
+			.reason {
+			    font-size: 12px;
+			    max-height: 36px;
+			    color: #949494;
+			    overflow: hidden;
+			    text-overflow: ellipsis;
+			    white-space: nowrap;
+			}
+			.price_wrap {
+			    display: inline-block;
+			    margin-right: 4px;
+			    vertical-align: middle;
+			}
+			 .buy_btn {
+			    color: #ff3500;
+			    position: relative;
+			    z-index: 2;
+			    display: inline-block;
+			    font-size: 12px;
+			}
+			/* content部分结束 */
+
+			/* footer部分开始 */
+			.footer_nav>p>a:not(:first-child) {
+				margin-left: 40px;
+			}
+
+			.footer_tel,
+			.footer_copy,
+			.wx_btn {
+				font-size: 14px;
+			}
+
+			.wx_btn {
+				color: #3e3e3e;
+			}
+
+			.footer_copy,
+			.footer_copy p a {
+				color: #949494
+			}
+
+			/* footer部分结束 */
+		</style>
+	</head>
+	<body>
+		<!-- header部分开始 -->
+		<div class="container-fluid bg-white">
+			<header class="container">
+				<div class="navbar navbar-light navbar-expand-lg  ">
+					<a class="navbar-brand" href="#"><img src="./img/logo.png"></a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item active">
+								<a class="nav-link" href="#">首页</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">蛋糕</a>
+							</li>
+							<li class="nav-item gift">
+								<a class="nav-link" href="">甜点心礼</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									合作专区
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">银行活动</a>
+									<a class="dropdown-item" href="#">企业采购</a>
+									<a class="dropdown-item" href="#">大客户区</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">立即兑换</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false">
+									我的诺心
+								</a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">我的aha</a>
+									<a class="dropdown-item" href="#">我的订单</a>
+									<a class="dropdown-item" href="#">找回密码</a>
+									<a class="dropdown-item" href="#">礼券专区</a>
+									<a class="dropdown-item" href="#">卡券绑定</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link iconfont" href="">
+									&#xe62b;成都
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link iconfont" href="">
+									<span class="text-muted city">查询地址</span>&#xe6d1;
+								</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a class="nav-link dropdown-toggle iconfont icon-denglu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+								 aria-haspopup="true" aria-expanded="false"></a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">登录</a>
+									<a class="dropdown-item" href="#">注册</a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link iconfont icon-shoutibao" href=""></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</header>
+			<hr class="m-0">
+		</div>
+		<!-- header部分结束 -->
+		<div class="container-fluid bg-white">
+			<div class="container bg-light py-3">
+				<div class="">
+					<img class="w-100" src="img/sweets_banner.jpg">
+				</div>
+				<div class="mt-3 p-4 bg-white row no-gutters">
+					<div class="border border-light p-3 col-lg-3 col-md-6 col-sm-12">
+						<img class="w-100" src="img/sweets1.jpg">
+						<h3 class="name">盒子蛋糕</h3>
+						<span class="tag">限时立减48元</span>
+						<div class="reason">随时随地，自在享甜无“腹”担</div>
+						<p class="new_price">¥168</p>
+						<span class="buy_btn">加入购物车></span>
+					</div>
+					<div class="border border-light p-3 col-lg-3 col-md-6 col-sm-12">
+						<img class="w-100" src="img/sweets2.jpg">
+						<h3 class="name">盒子蛋糕</h3>
+						<span class="tag">限时立减48元</span>
+						<div class="reason">随时随地，自在享甜无“腹”担</div>
+						<p class="new_price">¥168</p>
+						<span class="buy_btn">加入购物车></span>
+					</div>
+					<div class="border border-light p-3 col-lg-3 col-md-6 col-sm-12">
+						<img class="w-100" src="img/sweets3.jpg">
+						<h3 class="name">盒子蛋糕</h3>
+						<span class="tag">限时立减48元</span>
+						<div class="reason">随时随地，自在享甜无“腹”担</div>
+						<p class="new_price">¥168</p>
+						<span class="buy_btn">加入购物车></span>
+					</div>
+					<div class="border border-light p-3 col-lg-3 col-md-6 col-sm-12">
+						<img class="w-100" src="img/sweets4.jpg">
+						<h3 class="name">盒子蛋糕</h3>
+						<span class="tag">限时立减48元</span>
+						<div class="reason">随时随地，自在享甜无“腹”担</div>
+						<p class="new_price">¥168</p>
+						<span class="buy_btn">加入购物车></span>
+					</div>
+					<div class="border border-light p-3 col-lg-3 col-md-6 col-sm-12">
+						<img class="w-100" src="img/sweets5.jpg">
+						<h3 class="name">盒子蛋糕</h3>
+						<span class="tag">限时立减48元</span>
+						<div class="reason">随时随地，自在享甜无“腹”担</div>
+						<p class="new_price">¥168</p>
+						<span class="buy_btn">加入购物车></span>
+					</div>
+					<div class="border border-light p-3 col-lg-3 col-md-6 col-sm-12">
+						<img class="w-100" src="img/sweets6.jpg">
+						<h3 class="name">盒子蛋糕</h3>
+						<span class="tag">限时立减48元</span>
+						<div class="reason">随时随地，自在享甜无“腹”担</div>
+						<p class="new_price">¥168</p>
+						<span class="buy_btn">加入购物车></span>
+					</div>
+					<div class="border border-light p-3 col-lg-3 col-md-6 col-sm-12">
+						<img class="w-100" src="img/sweets7.jpg">
+						<h3 class="name">盒子蛋糕</h3>
+						<span class="tag">限时立减48元</span>
+						<div class="reason">随时随地，自在享甜无“腹”担</div>
+						<p class="new_price">¥168</p>
+						<span class="buy_btn">加入购物车></span>
+					</div>
+					<div class="border border-light p-3 col-lg-3 col-md-6 col-sm-12">
+						<img class="w-100" src="img/sweets8.jpg">
+						<h3 class="name">盒子蛋糕</h3>
+						<span class="tag">限时立减48元</span>
+						<div class="reason">随时随地，自在享甜无“腹”担</div>
+						<p class="new_price">¥168</p>
+						<span class="buy_btn">加入购物车></span>
+					</div>
+					<div class="border border-light p-3 col-lg-3 col-md-6 col-sm-12">
+						<img class="w-100" src="img/sweets9.jpg">
+						<h3 class="name">盒子蛋糕</h3>
+						<span class="tag">限时立减48元</span>
+						<div class="reason">随时随地，自在享甜无“腹”担</div>
+						<p class="new_price">¥168</p>
+						<span class="buy_btn">加入购物车></span>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<!-- footer部分开始 -->
+		<div class="container-fluid bg-white">
+			<div class="container ">
+				<div class="row no-gutters">
+					<div class="col-sm-12 col-md-10 d-flex flex-sm-column justify-content-sm-center">
+						<div class=" footer_nav ">
+							<p class="d-flex row no-gutters">
+								<a class=" text-dark" href="">诺心公告</a>
+								<a class=" text-dark" href="">关于诺心</a>
+								<a class=" text-dark" href="">客服服务</a>
+								<a class=" text-dark" href="">食品经营许可证</a>
+								<a class=" text-dark" href="">生产许可证</a>
+								<a class=" text-dark" href="">预付费卡协议</a>
+								<a class=" text-dark" href="">联系我们</a>
+								<a class=" text-dark" href="">环保信息</a>
+							</p>
+						</div>
+						<div class=" footer_tel">
+							<p>
+								<span>如有问题，请联系在线客服。工作时间：9:00-21:00</span>
+							</p>
+						</div>
+						<div class=" footer_copy">
+							<p>
+								copyright©2010-2020 诺心lecake.com版权所有&nbsp;&nbsp;
+								<a href="http://www.beian.miit.gov.cn" target="_blank">沪ICP备10211730号</a>&nbsp;&nbsp;
+								<a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=31010402003364&#10;" target="_blank">沪公网安备31010402003364号</a>
+							</p>
+						</div>
+					</div>
+					<div class="wx_btn col-sm-12 col-md-2 d-flex  flex-lg-wrap justify-content-sm-center text-center">
+						<a href="javascript:void (0)" class="wx_img">
+							<img class="w-75" src="./img/qrCode.png">
+						</a>
+						<p>关注微信公众号<br>&nbsp;&nbsp;可进入微商城</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- footer部分结束 -->
+	</body>
+</html>
